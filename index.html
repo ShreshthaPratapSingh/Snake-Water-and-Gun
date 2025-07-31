@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Water Gun -- Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="MainHeading">
+        <div class="titleCont">
+          <span class="title">Snake Water & Gun</span>
+        </div>
+        <div class="RulesSector">
+          <span class="RuleText">Rules:</span><br />
+          <span class="Rules"
+            >So the rules here are simple. You need to make a choice between
+            snake(🐍) | Water(💧) | Gun(🔫). The system will also choose one of
+            the above. The system and you will be playing a total of 10 rounds
+            after which the winner will be decided. The winner of each round as
+            per the choice will be decided as follows:</span
+          ><br />
+          <ul>
+            <li>Snake drinks Water → Snake wins</li>
+            <li>Water douses Gun → Water wins</li>
+            <li>Gun kills Snake → Gun wins</li>
+            <li>Same choice → It's a draw</li>
+          </ul>
+        </div>
+      </div>
+      <div class="MainGameHere">
+        <div class="DecisionTitle">Make Your Choice:</div>
+        <div class="Choices">
+          <img src="images/Snake.png" alt="" class="snake" />
+          <img src="images/Water.png" alt="" class="water" />
+          <img src="images/Gun.png" alt="" class="gun" />
+        </div>
+        <div class="What_Choices_Were_Made">
+          <span class="YouText">Your Choice:</span><span class="You"></span
+          ><br />
+          <span class="SystemText">System Choice:</span
+          ><span class="System"></span>
+        </div>
+        <div class="scoringSector">
+          <span class="YourScoreText">Your Score: 0</span
+          ><span class="SystemScoreText">System Score: 0</span>
+        </div>
+        <div class="ResultsSector">
+          <span class="ResultsText">Result:</span>
+        </div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>

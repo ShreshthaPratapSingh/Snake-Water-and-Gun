@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/Background.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 7vh;
+}
+.titleCont {
+  display: flex;
+  justify-content: center;
+}
+.RulesSector,
+.RulesSector ul {
+  margin: 2vh;
+}
+.RuleText {
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4vh;
+}
+.Rules,
+.RulesSector ul li {
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2vh;
+  font-weight: 100;
+}
+.MainGameHere {
+  display: flex;
+  gap: 2vh;
+  flex-direction: column;
+  align-items: center;
+}
+.DecisionTitle {
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 5vh;
+  font-weight: 500;
+}
+.snake,
+.water,
+.gun {
+  transition: 0.1s;
+  width: 13vh;
+  height: 13vh;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.snake:hover,
+.water:hover,
+.gun:hover {
+  transition: 0.1s;
+  transform: scale(1.08);
+}
+.Choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vh;
+}
+.What_Choices_Were_Made,
+.scoringSector,
+.ResultsSector {
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4vh;
+}
+.scoringSector {
+  display: flex;
+  gap: 4vh;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+.restartSector {
+  display: flex;
+  justify-content: center;
+}
+.RestartButton {
+    font-family: "Luckiest Guy", cursive;
+    padding: 1vh;
+    border: none;
+    font-size: 2.5vh;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+.RestartButton:hover{
+  background-color: #155825;
+}
